@@ -1,0 +1,5 @@
+This is a utility module to easily set matplotlib rcparams for EPS output
+suitable for inclusion in academic papers using LaTeX.
+
+It is based on [url of notes in pylab documentation] with modifications 
+to suit my own style.
