@@ -5,6 +5,8 @@ mpltex
 """
 
 golden_ratio = (5**.5-1.0)/2.0
+packages = ['amsmath', 'amssymb', 'amsfonts', 'amsbsy', 'bm']
+usepackages = [r'\usepackage{{{0}}}'.format(pkg) for pkg in packages]
 
 def pt_to_in(pt):
     return pt / 72.27
@@ -29,6 +31,7 @@ def get_rcParams(fig_width_pt = 232.0, scale = 1.0, dpi = 600):
                 'font.family': 'serif',
                 'font.serif': 'Times',
                 'text.usetex': True,
+                'text.latex.preamble': usepackages,
                 'figure.figsize': fig_size,
                 'figure.dpi': dpi}
     return params
