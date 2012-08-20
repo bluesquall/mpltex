@@ -16,6 +16,15 @@ def pt_to_mm(pt):
 
 def get_rcParams(fig_width_pt = 232.0, scale = 1.0, dpi = 600):
     """TODO: write a description
+    
+    Parameters
+    ----------
+    fig_width_pt: float (232.0)
+        Width of the figure in points. 
+        Use LaTeX \showthe\linewidth to figure out what number to use.
+            232.0 for two-column IEEEtran articles
+            YYYY for MIT/WHOI thesis figures
+
 
     """
     fig_width = pt_to_in(fig_width_pt) # width in inches
